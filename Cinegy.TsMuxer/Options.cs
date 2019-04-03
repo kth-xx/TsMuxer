@@ -61,7 +61,10 @@ namespace Cinegy.TsMuxer
         [Option('s', "subpids", Required = true,
         HelpText = "Comma separated list of sub stream PIDs to map into master")]
         public string SubPids { get; set; }
-
+        
+        [Option('x', "ttl", Required = true,
+        HelpText = "Add Time to Live to you transport stream")]
+        public int TimeToLive { get; set; }
 
     }
 }
